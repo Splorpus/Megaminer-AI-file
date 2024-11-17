@@ -136,7 +136,7 @@ class AI(BaseAI):
                         # print("I'm waiting...")
                         return True
                 elif stressed == 1:
-                    if self.player.wizard.health<=6:
+                    if self.player.wizard.health<=7:
                         self.player.wizard.move(self.player.wizard.tile.tile_east)
                         self.player.wizard.move(self.player.wizard.tile.tile_west)
                         stupidcount+=1
@@ -170,7 +170,7 @@ class AI(BaseAI):
                         # print("I'm waiting...")
                         return True
                 elif stressed == 1:
-                    if self.player.wizard.health<=6:
+                    if self.player.wizard.health<=7:
                         self.player.wizard.move(self.player.wizard.tile.tile_north)
                         self.player.wizard.move(self.player.wizard.tile.tile_south)
                         stupidcount+=1
@@ -206,7 +206,7 @@ class AI(BaseAI):
                         # print("I'm waiting...")
                         return True
                 elif stressed == 1:
-                    if self.player.wizard.health<=6:
+                    if self.player.wizard.health<=7:
                         self.player.wizard.move(self.player.wizard.tile.tile_west)
                         self.player.wizard.move(self.player.wizard.tile.tile_east)
                         stupidcount+=1
@@ -230,7 +230,7 @@ class AI(BaseAI):
                 return True
             elif stupidcount == 6:
                 if stressed == 0:
-                    if self.player.wizard.health<=12:
+                    if self.player.wizard.health<=10:
                         self.player.wizard.move(self.player.wizard.tile.tile_west)
                         self.player.wizard.move(self.player.wizard.tile.tile_east)
                         stupidcount+=1
@@ -239,7 +239,7 @@ class AI(BaseAI):
                         #print("I'm waiting...")
                         return True
                 elif stressed == 1:
-                    if self.player.wizard.health<=6:
+                    if self.player.wizard.health<=7:
                         self.player.wizard.move(self.player.wizard.tile.tile_west)
                         self.player.wizard.move(self.player.wizard.tile.tile_east)
                         stupidcount+=1
