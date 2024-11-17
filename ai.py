@@ -97,6 +97,7 @@ class AI(BaseAI):
 
         #0 starts in bottom left
         global stupidcount
+        global stressed
 
         if self.game.current_turn == 1:
             self.player.choose_wizard("sustaining")
